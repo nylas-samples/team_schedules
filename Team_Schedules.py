@@ -7,10 +7,6 @@ from dotenv import load_dotenv
 # Load your env variables
 load_dotenv()
 
-CLIENT_ID = os.environ['CLIENT_ID']
-CLIENT_SECRET = os.environ['CLIENT_SECRET']
-ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
-
 # Initialize your Nylas API client
 nylas = APIClient(
     os.environ.get("CLIENT_ID"),
